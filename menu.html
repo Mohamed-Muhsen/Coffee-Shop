@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt="Coffee Shop Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="menu.html">Menu</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="search-icon"><a href="#"><i class="fas fa-search"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="#"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <div class="search-form" id="search-form">
+        <input type="text" placeholder="Search here...">
+    </div>
+
+    <section id="Menu-homee">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="images/videos/machine.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </section>
+
+
+    <section id="menu-section">
+        <h1 id="hot-drinks">Hot Drinks</h1>
+
+        <div class="menu-container">
+
+            <div class="menu-item">
+                <img src="images/menu/ameri.webp" alt="American">
+                <div>
+                    <h3>American Coffe</h3>
+                    <p>Small Size: $3.00</p>
+                    <p>Large Size: $3.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/espresso.webp" alt="Espresso">
+                <div>
+                    <h3>Special Espresso</h3>
+                    <p>Small Size: $2.25</p>
+                    <p>Large Size: $2.75</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/cortado.jpg" alt="House Blend">
+                <div>
+                    <h3>Cortado Coffee</h3>
+                    <p>Small Size: $5.00</p>
+                    <p>Large Size: $6.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/flat.jpg" alt="Flat White">
+                <div>
+                    <h3>Flat White</h3>
+                    <p>Small Size: $4.00</p>
+                    <p>Large Size: $5.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/mocha.jpg" alt="Moccha">
+                <div>
+                    <h3>Moccha</h3>
+                    <p>Small Size: $5.00</p>
+                    <p>Large Size: $6.25</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/viennese.jpg" alt="viennese">
+                <div>
+                    <h3>Viennese</h3>
+                    <p>Small Size: $5.50</p>
+                    <p>Large Size: $6.75</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/dalgona.jpeg" alt="dalgona">
+                <div>
+                    <h3>Dalgona</h3>
+                    <p>Small Size: $4.25</p>
+                    <p>Large Size: $5.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/affogato.jpg" alt="affogato">
+                <div>
+                    <h3>Affogato</h3>
+                    <p>Small Size: $6.00</p>
+                    <p>Large Size: $6.75</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/freddo.jpg" alt="freddo">
+                <div>
+                    <h3>Freddo</h3>
+                    <p>Small Size: $4.00</p>
+                    <p>Large Size: $5.50</p>
+                </div>
+            </div>
+            <div class="menu-controls">
+                <button class="nav-btn prev-btn">&#9664;</button>
+                <button class="nav-btn next-btn">&#9654;</button>
+            </div>
+        </div>
+        <div class="dots">
+            <button id="arrow" class="nav-btn prev-btn">&#9664;</button>
+            <span class="dot" id="active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <button id="arrow" class="nav-btn next-btn">&#9654;</button>
+        </div>
+    </section>
+    <section id="menu-section">
+        <h1 id="cold-drinks">Cold Drinks</h1>
+
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/menu/brew.jpeg" alt="Cold Brew">
+                <div>
+                    <h3>Cold Brew</h3>
+                    <p>Small Size: $6.00</p>
+                    <p>Large Size: $7.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/frap.jpeg" alt="Frappuccion">
+                <div>
+                    <h3>Frappuccion</h3>
+                    <p>Small Size: $6.25</p>
+                    <p>Large Size: $7.75</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/tea.webp" alt="ICE tea">
+                <div>
+                    <h3>Ice Tea</h3>
+                    <p>Small Size: $3.25</p>
+                    <p>Large Size: $4.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/milk.jpg" alt="MilkShake">
+                <div>
+                    <h3>Milkshake</h3>
+                    <p>Small Size: $6.00</p>
+                    <p>Large Size: $7.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/bloody mary.jpg" alt="House Blend">
+                <div>
+                    <h3>Bloody Mary</h3>
+                    <p>Small Size: $7.00</p>
+                    <p>Large Size: $9.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/smo.jpg" alt="Smoothie">
+                <div>
+                    <h3>Smoothie</h3>
+                    <p>Small Size: $4.25</p>
+                    <p>Large Size: $5.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/caipirinha.jpg" alt="caipirinha">
+                <div>
+                    <h3>Caipirinha</h3>
+                    <p>Small Size: $9.00</p>
+                    <p>Large Size: $10.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/pinacolada.webp" alt="pinacolada">
+                <div>
+                    <h3>pinacolada</h3>
+                    <p>Small Size: $8.25</p>
+                    <p>Large Size: $9.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/mix.jpeg" alt="Fresh Juice">
+                <div>
+                    <h3>Cold Juicies</h3>
+                    <p>Small Size: $4.00</p>
+                    <p>Large Size: $5.50</p>
+                </div>
+            </div>
+            <div class="menu-controls">
+                <button class="nav-btn prev-btn">&#9664;</button>
+                <button class="nav-btn next-btn">&#9654;</button>
+            </div>
+        </div>
+        <div class="dots">
+            <button id="arrow" class="nav-btn prev-btn">&#9664;</button>
+            <span class="dot"></span>
+            <span class="dot" id="active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <button id="arrow" class="nav-btn next-btn">&#9654;</button>
+
+
+        </div>
+    </section>
+    <section id="menu-section">
+        <h1 id="breakfast">BreakFast</h1>
+
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/menu/pan.jpg" alt="Pancakes">
+                <div>
+                    <h3>Pancakes</h3>
+                    <p>Three Pieces: $3.00</p>
+                    <p>Six Pieces: $5.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/waf.webp" alt="waffles">
+                <div>
+                    <h3>Waffles</h3>
+                    <p>Three Pieces: $3.00</p>
+                    <p>Six Pieces: $5.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/cinn.jpg" alt="Cinnamon">
+                <div>
+                    <h3>Cinnamon</h3>
+                    <p>Small Size: $4.00</p>
+                    <p>Large Size: $5.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/toa.webp" alt="French Toast">
+                <div>
+                    <h3>French Toast</h3>
+                    <p>Small Size: $3.25</p>
+                    <p>Large Size: $4.75</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/bur.jpeg" alt="Burrito">
+                <div>
+                    <h3>Burrtio</h3>
+                    <p>Small Size: $4.25</p>
+                    <p>Large Size: $5.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/bag.jpg" alt="Bagal">
+                <div>
+                    <h3>Bagal</h3>
+                    <p>Single: $4.50</p>
+                    <p>Double: $5.75</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/gran.jpeg" alt="Granola with Yogurt">
+                <div>
+                    <h3>Granola with Yogurt</h3>
+                    <p>Small Size: $6.00</p>
+                    <p>Large Size: $7.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/avo.jpg" alt="Avocado Toast">
+                <div>
+                    <h3>Avocado Toast</h3>
+                    <p>Small Size: $4.00</p>
+                    <p>Large Size: $5.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu/croo.jpeg" alt="croissant">
+                <div>
+                    <h3>Croissant</h3>
+                    <p>Small Size: $4.25</p>
+                    <p>Large Size: $5.00</p>
+                </div>
+            </div>
+            <div class="menu-controls">
+                <button class="nav-btn prev-btn">&#9664;</button>
+                <button class="nav-btn next-btn">&#9654;</button>
+            </div>
+        </div>
+        <div class="dots">
+            <button id="arrow" class="nav-btn prev-btn">&#9664;</button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span id="active" class="dot"></span>
+            <button id="arrow" class="nav-btn next-btn">&#9654;</button>
+        </div>
+    </section>
+
+    <section id="footer-video">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="images/videos/order.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-content">
+            <h2>Thank You for Visiting!</h2>
+            <p>We hope you enjoyed your stay. Stay tuned for more updates.</p>
+            <a href="contact.html#contact-details" class="btnn">Contact Us</a>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4 class="foot">Contact</h4>
+            <p><strong>Address:</strong> 562 wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>FIND US ON</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>COMPANY INFO</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Information</a>
+            <a href="#">Careers</a>
+            <a href="#">Social Responsibility</a>
+            <a href="#">Terms of Service</a>
+            <a href="#"></a>
+        </div>
+        <div class="col">
+            <h4>HELP & SUPPORT</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Refund</a>
+            <a href="#">How to Order</a>
+            <a href="#">How to Track</a>
+            <a href="#">Technical Support</a>
+            <a href="#">Coffee VIP</a>
+        </div>
+
+        <div class="col">
+            <h4>CUSTOMER CARE</h4>
+            <a href="#">Contact US</a>
+            <a href="#">Payment Method</a>
+            <a href="#">Bouns Point</a>
+            <a href="#">Klarna</a>
+            <a href="#"></a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/footer/app.jpg" alt="">
+                <img src="images/footer/play.jpg" alt="">
+            </div>
+
+            <p id="acc">WE ACCEPT</p>
+            <img src="images/footer/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2020-2024 Coffee All Rights Reserved</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Manage Cookies </a>
+                | <a href="#">Terms & Conditions</a> |
+            </p>
+            <p> <a href="#">IP Nortic</a> | <a href="#"> Imprint</a> | <a href="#">Ad Choice</a> |
+                <a href="#"><i class="far fa-map-marker-alt"> Egypt</i></a>
+            </p>
+            <p id="mohsen">Created By All Love <span>Mohamed Mohsen</span> <a href="https://wa.me/01553554204"><i
+                        class="fab fa-whatsapp 2fa-x"></i>
+                </a></p>
+
+        </div>
+
+
+    </footer>
+
+    <div class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt="Coffee Shop Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="search-icon"><a href="#"><i class="fas fa-search"></i></a></li>
+                <li id="lg-bag">
+                    <a class="active" href="cart.html">
+                        <i class="far fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="#"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="cart">
+        <h1>Your Cart</h1>
+        <div id="cart-items">
+        </div>
+        <div id="cart-summary">
+            <div class="promo-section">
+                <input type="text" id="promo-code" placeholder="Enter promo code">
+                <button id="apply-promo">Apply</button>
+                <span id="promo-message"></span>
+            </div>
+            <div class="summary">
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>Discount: $<span id="discount">0.00</span></p>
+                <p>Total: $<span id="total">0.00</span></p>
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
